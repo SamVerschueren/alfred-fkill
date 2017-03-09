@@ -26,7 +26,14 @@ psList().then(data => {
 				mods: {
 					alt: {
 						subtitle: 'Force kill',
-						arg: `${process.pid} force`
+						arg: JSON.stringify({
+							alfredworkflow: {
+								arg: process.pid,
+								variables: {
+									force: true
+								}
+							}
+						})
 					}
 				}
 			};
