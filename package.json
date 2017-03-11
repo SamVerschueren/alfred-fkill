@@ -20,6 +20,7 @@
   "files": [
     "index.js",
     "kill.js",
+    "lib",
     "icon.png",
     "info.plist"
   ],
