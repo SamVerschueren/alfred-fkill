@@ -15,15 +15,13 @@
   "scripts": {
     "test": "xo && ava",
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup",
-    "icons": "./icns2png.js icns icons"
+    "preuninstall": "alfy-cleanup"
   },
   "files": [
     "index.js",
     "kill.js",
     "icon.png",
-    "info.plist",
-    "icons"
+    "info.plist"
   ],
   "keywords": [
     "alfred",
@@ -41,13 +39,11 @@
   "dependencies": {
     "alfy": "^0.6.0",
     "fkill": "^4.1.0",
-    "path-exists": "^3.0.0",
     "ps-list": "^3.1.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "*",
-    "iconutil": "^1.0.2",
     "xo": "*"
   }
 }

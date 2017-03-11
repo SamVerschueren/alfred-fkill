@@ -1,25 +1,27 @@
 'use strict';
 const alfy = require('alfy');
 const psList = require('ps-list');
-const pathExists = require('path-exists');
 
 psList().then(data => {
 	const items = alfy
 		.inputMatches(data, 'name')
+		.filter(process => !process.name.endsWith(' Helper'))
 		.map(process => {
-			let icon = `./icons/${process.name.replace(/ Helper$/, '')}.png`;
+			const cleanedPath = process.cmd.replace(/\.app\/Contents\/.*$/, '.app');
 
-			if (!pathExists.sync(icon)) {
-				icon = './icon.png';
-			}
+			// TODO: Use the `process.path` property in `ps-list` when implemented there
+			// The below can be removed then
+			const pathForIcon = cleanedPath.replace(/ -.*/, ''); // Removes arguments
 
 			return {
 				title: process.name,
 				autocomplete: process.name,
-				subtitle: process.cmd,
+				// TODO; Use `process.path` property
+				subtitle: cleanedPath,
 				arg: process.pid,
 				icon: {
-					path: icon
+					type: 'fileicon',
+					path: pathForIcon
 				},
 				mods: {
 					alt: {
