@@ -1,6 +1,6 @@
 {
   "name": "alfred-fkill",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Alfred 3 workflow to fabulously search and kill processes",
   "license": "MIT",
   "repository": "SamVerschueren/alfred-fkill",
