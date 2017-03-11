@@ -1,6 +1,7 @@
 'use strict';
 const alfy = require('alfy');
 const psList = require('ps-list');
+const util = require('./lib/util');
 
 psList().then(data => {
 	const items = alfy
@@ -37,7 +38,8 @@ psList().then(data => {
 					}
 				}
 			};
-		});
+		})
+		.sort(util.sorter);
 
 	alfy.output(items);
 });
