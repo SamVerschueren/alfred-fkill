@@ -40,7 +40,7 @@
   "dependencies": {
     "alfy": "^0.6.0",
     "fkill": "^4.1.0",
-    "ps-list": "^3.1.0"
+    "ps-list": "^4.0.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",

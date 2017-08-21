@@ -25,6 +25,9 @@ psList().then(data => {
 					path: pathForIcon
 				},
 				mods: {
+					shift: {
+						subtitle: `CPU ${process.cpu}%`
+					},
 					alt: {
 						subtitle: 'Force kill',
 						arg: JSON.stringify({
