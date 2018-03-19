@@ -38,8 +38,8 @@
     "force"
   ],
   "dependencies": {
-    "alfy": "^0.6.0",
-    "fkill": "^4.1.0",
+    "alfy": "^0.7.0",
+    "fkill": "^5.3.0",
     "ps-list": "^4.0.0"
   },
   "devDependencies": {
