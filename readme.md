@@ -18,6 +18,8 @@ $ npm install --global alfred-fkill
 
 In Alfred, type `kill`, <kbd>Enter</kbd>, and the name of your process.
 
+To kill a process by its port number, prefix it with a colon. For example: `kill :8080`.
+
 Select an item and press <kbd>Enter</kbd> to kill the process.<br>
 Hold <kbd>Shift</kbd> to show the used CPU percentage.<br>
 Hold <kbd>Alt</kbd> and press <kbd>Enter</kbd> to force kill the process.
