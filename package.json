@@ -1,52 +1,52 @@
 {
-  "name": "alfred-fkill",
-  "version": "0.4.0",
-  "description": "Alfred 3 workflow to fabulously search and kill processes",
-  "license": "MIT",
-  "repository": "SamVerschueren/alfred-fkill",
-  "author": {
-    "name": "Sam Verschueren",
-    "email": "sam.verschueren@gmail.com",
-    "url": "github.com/SamVerschueren"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava",
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
-  },
-  "files": [
-    "index.js",
-    "kill.js",
-    "lib",
-    "icon.png",
-    "info.plist"
-  ],
-  "keywords": [
-    "alfred",
-    "workflow",
-    "alfy",
-    "fkill",
-    "kill",
-    "killing",
-    "killall",
-    "taskkill",
-    "sigkill",
-    "sigterm",
-    "force"
-  ],
-  "dependencies": {
-    "alfy": "^0.8.0",
-    "fkill": "^5.3.0",
-    "pid-from-port": "^1.1.2",
-    "ps-list": "^4.0.0"
-  },
-  "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "*",
-    "get-port": "^3.2.0",
-    "xo": "*"
-  }
+	"name": "alfred-fkill",
+	"version": "0.4.0",
+	"description": "Alfred 3 workflow to fabulously search and kill processes",
+	"license": "MIT",
+	"repository": "SamVerschueren/alfred-fkill",
+	"author": {
+		"name": "Sam Verschueren",
+		"email": "sam.verschueren@gmail.com",
+		"url": "github.com/SamVerschueren"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava",
+		"postinstall": "alfy-init",
+		"preuninstall": "alfy-cleanup"
+	},
+	"files": [
+		"index.js",
+		"kill.js",
+		"lib",
+		"icon.png",
+		"info.plist"
+	],
+	"keywords": [
+		"alfred",
+		"workflow",
+		"alfy",
+		"fkill",
+		"kill",
+		"killing",
+		"killall",
+		"taskkill",
+		"sigkill",
+		"sigterm",
+		"force"
+	],
+	"dependencies": {
+		"alfy": "^0.8.0",
+		"fkill": "^5.3.0",
+		"pid-from-port": "^1.1.2",
+		"ps-list": "^4.0.0"
+	},
+	"devDependencies": {
+		"alfy-test": "^0.3.0",
+		"ava": "*",
+		"get-port": "^3.2.0",
+		"xo": "*"
+	}
 }
